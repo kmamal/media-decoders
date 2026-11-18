@@ -1,0 +1,62 @@
+{
+  "version": "0.0.1",
+  "name": "@kmamal/media-decoders",
+  "description": "Audio and video decoding for Node.js through FFmpeg",
+  "keywords": [
+    "ffmpeg",
+    "video",
+    "audio",
+    "decoder",
+    "decoding",
+    "media",
+    "mp4",
+    "webm",
+    "av1",
+    "vp9",
+    "h264",
+    "opus"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kmamal/media-decoders.git"
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "main": "./src/javascript/index.js",
+  "types": "./src/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/types/index.d.ts",
+      "default": "./src/javascript/index.js"
+    }
+  },
+  "gypfile": true,
+  "scripts": {
+    "test": "npx @kmamal/testing",
+    "install": "cd scripts && node install.mjs",
+    "download-release": "cd scripts && node download-release.mjs",
+    "download-ffmpeg": "cd scripts && node download-ffmpeg.mjs",
+    "build": "cd scripts && node build.mjs",
+    "upload-release": "cd scripts && node upload-release.mjs",
+    "release": "cd scripts && node release.mjs",
+    "clean": "cd scripts && node clean.mjs",
+    "generate-fixtures": "cd scripts && node generate-fixtures.mjs"
+  },
+  "devDependencies": {
+    "@kmamal/testing": "0.0.34",
+    "node-addon-api": "8.9.2",
+    "node-gyp": "13.1.0"
+  },
+  "config": {
+    "ffmpeg": {
+      "owner": "kmamal",
+      "repo": "build-ffmpeg",
+      "version": "9.0.2"
+    }
+  },
+  "dependencies": {
+    "modern-tar": "0.8.6"
+  }
+}

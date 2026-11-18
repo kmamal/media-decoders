@@ -1,0 +1,10 @@
+/.github/
+/tests/
+/ffmpeg/
+/build/
+/dist/
+/publish/
+/scripts/clean.mjs
+/scripts/generate-fixtures.mjs
+/scripts/release.mjs
+/scripts/upload-release.mjs

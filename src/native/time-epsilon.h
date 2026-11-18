@@ -1,0 +1,6 @@
+#ifndef _MEDIA_DECODERS_TIME_EPSILON_H_
+#define _MEDIA_DECODERS_TIME_EPSILON_H_
+
+inline constexpr double TIME_EPSILON = 1e-6;
+
+#endif // _MEDIA_DECODERS_TIME_EPSILON_H_
